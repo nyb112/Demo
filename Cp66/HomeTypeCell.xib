@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="HomeTypeCell" customModule="Cp66" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="252" height="113"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="252" height="113"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="R8l-mI-Pnx">
+                        <rect key="frame" x="10" y="17" width="79" height="79"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Krj-3Q-W4i">
+                        <rect key="frame" x="94" y="17" width="148" height="40"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bvB-Ta-ppN">
+                        <rect key="frame" x="94" y="57" width="148" height="40"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="R8l-mI-Pnx" firstAttribute="centerY" secondItem="gTV-IL-0wX" secondAttribute="centerY" id="1sY-ar-Lgd"/>
+                <constraint firstItem="bvB-Ta-ppN" firstAttribute="top" secondItem="Krj-3Q-W4i" secondAttribute="bottom" id="Cz3-tf-w1h"/>
+                <constraint firstItem="Krj-3Q-W4i" firstAttribute="top" secondItem="R8l-mI-Pnx" secondAttribute="top" id="ESG-hK-LKj"/>
+                <constraint firstItem="bvB-Ta-ppN" firstAttribute="width" secondItem="Krj-3Q-W4i" secondAttribute="width" id="J6C-ix-Uv2"/>
+                <constraint firstItem="R8l-mI-Pnx" firstAttribute="width" secondItem="gTV-IL-0wX" secondAttribute="height" multiplier="0.7" id="JSy-vg-gPn"/>
+                <constraint firstItem="R8l-mI-Pnx" firstAttribute="height" secondItem="gTV-IL-0wX" secondAttribute="height" multiplier="0.7" id="KBm-6h-fvj"/>
+                <constraint firstItem="bvB-Ta-ppN" firstAttribute="height" secondItem="Krj-3Q-W4i" secondAttribute="height" id="M6C-8f-0Bt"/>
+                <constraint firstItem="R8l-mI-Pnx" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="10" id="eTu-PE-GWX"/>
+                <constraint firstAttribute="trailing" secondItem="Krj-3Q-W4i" secondAttribute="trailing" constant="10" id="jIn-hd-9wC"/>
+                <constraint firstItem="Krj-3Q-W4i" firstAttribute="height" secondItem="R8l-mI-Pnx" secondAttribute="height" multiplier="0.5" id="m1y-p9-tmY"/>
+                <constraint firstItem="bvB-Ta-ppN" firstAttribute="leading" secondItem="R8l-mI-Pnx" secondAttribute="trailing" constant="5" id="qsO-Qd-Xd0"/>
+                <constraint firstItem="Krj-3Q-W4i" firstAttribute="leading" secondItem="R8l-mI-Pnx" secondAttribute="trailing" constant="5" id="xyv-rt-rBm"/>
+            </constraints>
+            <size key="customSize" width="252" height="113"/>
+            <point key="canvasLocation" x="-25" y="-3.5"/>
+        </collectionViewCell>
+    </objects>
+</document>
